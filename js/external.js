@@ -22,4 +22,8 @@ alert('I will receive: ' + ((400 * 6) + (380 * 4) + (350 * 10)));
 
 var full = confirm("Is the class full?");
 var conflict = confirm("Is there a conflict?");
-alert("You can enroll in class:" + (!full && !conflict));
+alert("You can enroll in class: " + (!full && !conflict));
+
+var offer = confirm("Are you a Premium member?");
+
+alert()
