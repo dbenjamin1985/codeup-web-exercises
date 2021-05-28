@@ -10,7 +10,7 @@
  */
 
 function sayHello(name) {
-    return "hello, " + name;
+    return "Hello, " + name;
 }
 
 /**
@@ -21,8 +21,8 @@ function sayHello(name) {
  * console.log 'helloMessage' to check your work
  */
 
-var helloMessage = sayHello('David')
-
+var helloMessage = sayHello('David');
+console.log(helloMessage);
 
 
 /**
@@ -32,9 +32,15 @@ var helloMessage = sayHello('David')
  * console.
  */
 
+var myName = "David";
+console.log(sayHello(myName));
+
+
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
 var random = Math.floor((Math.random() * 3) + 1);
+
+
 
 /**
  * TODO:
@@ -53,6 +59,9 @@ var random = Math.floor((Math.random() * 3) + 1);
  * different result everytime you refresh the page if you are using the random
  * number)
  */
+
+
+
 
 /**
  * TODO:
@@ -87,3 +96,5 @@ var random = Math.floor((Math.random() * 3) + 1);
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
+
+function
