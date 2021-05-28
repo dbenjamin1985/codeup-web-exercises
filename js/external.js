@@ -16,7 +16,7 @@ alert(message);
 
 console.log("Hello from External JavaScript")
 
-alert('The price for the movies is: ' + (3 * 5 * 1) * 3);
+alert('The price for the movies is: ' + (3 + 5 + 1) * 3);
 
 alert('I will receive: ' + ((400 * 6) + (380 * 4) + (350 * 10)));
 
@@ -25,5 +25,7 @@ var conflict = confirm("Is there a conflict?");
 alert("You can enroll in class: " + (!full && !conflict));
 
 var offer = confirm("Are you a Premium member?");
+var quantity = Number(prompt("Are you purchasing more than 2 items?"));
+var expired_coupon = confirm('Is your coupon expired?');
 
-alert()
+alert("Discount approved " + ((!expired_coupon) && (offer || (quantity > 2))));
