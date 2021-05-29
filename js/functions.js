@@ -59,7 +59,11 @@ var random = Math.floor((Math.random() * 3) + 1);
  * different result everytime you refresh the page if you are using the random
  * number)
  */
-
+function isTwo(number){
+    return number;
+    var random_number = isTwo('random');
+}
+console.log()
 
 
 
@@ -75,12 +79,24 @@ var random = Math.floor((Math.random() * 3) + 1);
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
 
+function calculateTip (){
+    return tip
+}
+
 /**
  * TODO:
  * Use prompt and alert in combination with your calculateTip function to
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
+
+var userInput = prompt('What is the total amount?');
+console.log('The user entered: ' + userInput);
+
+var userInput2 = prompt('What percent would you like to tip?');
+console.log('The user entered: ' + userInput2);
+
+alert('This is what you should tip: ' + (userInput * userInput2));
 
 /**
  * TODO:
@@ -96,3 +112,7 @@ var random = Math.floor((Math.random() * 3) + 1);
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
+
+function applyDiscount (){
+    return
+}
