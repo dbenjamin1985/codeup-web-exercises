@@ -22,11 +22,14 @@
 function analyzeColor (colorName) {
     if (colorName === 'blue') {
         return "Blue is the color of the sky!";
-    } else if (colorName === 'red') {
+    }
+    else if (colorName === 'red') {
         return "Strawberries are red!";
-    } else if (colorName === 'cyan') {
-        return "I don't know anything about cyan...";
-    } else {
+    }
+    else if (colorName === 'cyan') {
+        return "I don't know anything about cyan";
+    }
+    else {
         return "Looks like you didn't pick colors I like! Too bad!";
     }
 }
@@ -50,6 +53,24 @@ console.log(analyzeColor(randomColor));
  * TODO:
  * Refactor your above function to use a switch-case statement
  */
+function analyzeColor (colorName) {
+    switch(colorName) {
+        case "blue":
+            return "Blue is the color of the sky!";
+        case "red":
+            return "Strawberries are red!";
+        case "cyan":
+            return " I don't know anything about cyan...";
+        default:
+            return "Your color of choice is not popular - " + colorName;
+    }
+}
+
+console.log(analyzeColor(randomColor));
+
+
+
+
 
 /**
  * TODO:
@@ -58,6 +79,8 @@ console.log(analyzeColor(randomColor));
  * function to show it to the user.
  */
 
+var inputColor = prompt("Enter a color")
+alert(analyzeColor(inputCOlor));
 /* ########################################################################## */
 
 /**
@@ -80,6 +103,28 @@ console.log(analyzeColor(randomColor));
  * return value.
  */
 
+function calculateTotal (luckyNumber, totalAmount) {
+    switch (luckyNumber) {
+        case 0:
+            return totalAmount;
+        case 1:
+            return (totalAmount * .10);
+        case 2:
+            return (totalAmount * .25);
+        case 3:
+            return (totalAmount * .35);
+        case 4:
+            return (totalAmount * .50);
+        case 5:
+            return 0;
+    }
+}
+console.log(calculateTotal(0, 100));
+console.log(calculateTotal(1, 100));
+console.log(calculateTotal(2, 100));
+console.log(calculateTotal(3, 100));
+console.log(calculateTotal(4, 100));
+console.log(calculateTotal(5, 100));
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 6.
@@ -88,7 +133,9 @@ console.log(analyzeColor(randomColor));
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+var luckyNumber = Math.floor(Math.random() * 6);
+var totalBill = prompt ("What is your total bill?")
+
 
 /**
  * TODO:
@@ -105,3 +152,18 @@ console.log(analyzeColor(randomColor));
  *
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
+ */
+var answer = confirm("Would you like to enter a number?");
+if (answer) {
+    var number = prompt ("Enter a number");
+    if(isNaN(answer)) {
+        alert("You didn't enter a number");
+    } else {
+        number = Parse
+        if (number % 2 == 0) {
+            alert ("Your number is even");
+        } else {
+            alert ("Your number is odd");
+        }
+    }
+}
