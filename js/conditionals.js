@@ -19,6 +19,17 @@
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
+function analyzeColor (colorName) {
+    if (colorName === 'blue') {
+        return "Blue is the color of the sky!";
+    } else if (colorName === 'red') {
+        return "Strawberries are red!";
+    } else if (colorName === 'cyan') {
+        return "I don't know anything about cyan...";
+    } else {
+        return "Looks like you didn't pick colors I like! Too bad!";
+    }
+}
 
 // Don't change the next two lines!
 // These lines create two variables for you:
@@ -32,6 +43,8 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Pass the `randomColor` variable to your function and console.log the results.
  * You should see a different message every time you refresh the page
  */
+
+console.log(analyzeColor(randomColor));
 
 /**
  * TODO:
