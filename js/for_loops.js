@@ -1,13 +1,13 @@
 // # 2
 function showMultiplicationTable (x) {
-    for (var i = 1; i <= 10; i++) {
+    for (var i = 1; i < 11; i++) {
         console.log(x + " x " + i + " = " + (x * i));
     }
 }
 showMultiplicationTable(7);
 
 // # 3
-for (let ev = 0; ev<10; ev++) {
+for (let ev = 0; ev < 10; ev++) {
     let random = Math.ceil(Math.random() * 200) + 20;
     if (random % 2 !== 0) {
         console.log(random + " is odd");
@@ -23,7 +23,7 @@ for (var i = 1, number = ""; i < 10; i++) {
 }
 
 //#5
-for (var i = 100; i > 0; i = i -5) {
+for (var i = 100; i > 5; i = i - 5) {
     console.log(i);
 }
 
