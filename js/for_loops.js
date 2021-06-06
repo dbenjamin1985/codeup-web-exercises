@@ -17,7 +17,13 @@ for (let ev = 0; ev<10; ev++) {
 }
 
 // # 4
+for (var i = 1, number = ""; i < 10; i++) {
+    number += "1";
+    console.log(i + number)
+}
 
-
-
+//#5
+for (var i = 100; i > 0; i = i -5) {
+    console.log(i);
+}
 
