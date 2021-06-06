@@ -17,13 +17,13 @@ for (let ev = 0; ev < 10; ev++) {
 }
 
 // # 4
-for (var i = 1, number = ""; i < 10; i++) {
+for (var index = 1, number = ""; index < 10; index++) {
     number += "1";
-    console.log(i + number)
+    console.log(index + number)
 }
 
 //#5
-for (var i = 100; i > 5; i = i - 5) {
+for (var i = 100; i >= 5; i = i - 5) {
     console.log(i);
 }
 

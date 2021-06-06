@@ -9,7 +9,7 @@ while (true) {
 
 console.log("Number to skip is" + number);
 
-for (let i = 0; i < 50; i++) {
+for (let i = 0; i < 51; i++) {
     if (i == oddNumber) {
         console.log("Yikes! Skipping number: " + i);
         continue
