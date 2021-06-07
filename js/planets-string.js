@@ -25,4 +25,8 @@
      */
     var planetsString = planetsArray.join('<br>');
     document.write(planetsString);
+
+    //Bonus
+    var planetsString = "<ul><li>" + planetsArray.join("</li><li>") + "</li></ul>";
+    document.write(planetsString);
 })();
