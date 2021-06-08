@@ -27,7 +27,8 @@
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
-
+    person.sayHello = "Hello!";
+    console.log(person.sayHello + " I'm " + person.firstName + " " + person.lastName);
 
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
@@ -42,12 +43,22 @@
      * represents one shopper. Use a foreach loop to iterate through the array,
      * and console.log the relevant messages for each person
      */
-
-     var shoppers = [
+    var shoppers = [
          {name: 'Cameron', amount: 180},
          {name: 'Ryan', amount: 250},
          {name: 'George', amount: 320}
      ];
+
+    shoppers.forEach(function(shopper){
+        var discount = shopper.amount * .12;
+        var totalAmount = shopper.amount - discount;
+
+        if (shopper.amount >= 200) {
+            console.log(shopper.name + ":" + "\n" + "Total with discount: $"+ totalAmount)
+        } else {
+            console.log(shopper.name + ":" + "\n" + "Total without discount: $"+ shopper.amount)
+        }
+    });
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -61,7 +72,58 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
-
+    var books = [
+        {
+            title: "Sum of all Fears",
+            author: {
+                firstName: "Tom",
+                lastName: "Clancy"
+            }
+        },
+        {
+            title: "Rainbow Six",
+            author: {
+                firstName: "Tom",
+                lastName: "Clancy"
+            }
+        },
+        {
+            title: "Modern Strategy",
+            author: {
+                firstName: "Colin",
+                lastName: "Gray"
+            }
+        },
+        {
+            title: "Zero Dark Thirty",
+            author: {
+                firstName: "Samuel",
+                lastName: "Brantley"
+            }
+        },
+        {
+            title: "Fahrenheit 451",
+            author: {
+                firstName: "Ray",
+                lastName: "Bradbury"
+            }
+        }
+    ];
+    console.log(books[0].title)
+    console.log(books[0].author.firstName)
+    console.log(books[0].author.lastName)
+    console.log(books[1].title)
+    console.log(books[1].author.firstName)
+    console.log(books[1].author.lastName)
+    console.log(books[2].title)
+    console.log(books[2].author.firstName)
+    console.log(books[2].author.lastName)
+    console.log(books[3].title)
+    console.log(books[3].author.firstName)
+    console.log(books[3].author.lastName)
+    console.log(books[4].title)
+    console.log(books[4].author.firstName)
+    console.log(books[4].author.lastName)
 
 
     /**
@@ -88,8 +150,9 @@
      *      ---
      *      ...
      */
-
-
+    for (var index = 0; index <= 4; index++) {
+        console.log("Book # " + (index + 1) + "\n" + "Title: " + books[index].title + "\n" + "Author: " + books[index].author.firstName + " " + books[index].author.lastName);
+    }
 
     /**
      * Bonus:
