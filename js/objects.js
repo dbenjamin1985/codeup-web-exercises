@@ -54,9 +54,9 @@
         var totalAmount = shopper.amount - discount;
 
         if (shopper.amount >= 200) {
-            console.log(shopper.name + ":" + "\n" + "Total with discount: $"+ totalAmount)
+            console.log(shopper.name + ":" + "\n" + "Total with discount: $"+ totalAmount.toFixed(2))
         } else {
-            console.log(shopper.name + ":" + "\n" + "Total without discount: $"+ shopper.amount)
+            console.log(shopper.name + ":" + "\n" + "Total without discount: $"+ shopper.amount.toFixed(2))
         }
     });
 
